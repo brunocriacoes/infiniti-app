@@ -1,3 +1,9 @@
+globalThis.reload = () => {
+    window.location.reload()
+}
+globalThis.back = () => {
+    window.history.back()
+}
 export default {
     render( el ) {
         return `
@@ -5,7 +11,7 @@ export default {
                 <div class="container">
                     <div class="menu">
                         <div>
-                            <a href="">
+                            <a href="javascript:void(back())">
                                 <img src="./assets/ico/arrow.svg">
                             </a>
                         </div>
@@ -13,7 +19,7 @@ export default {
                             Resumo Atual do Balcão
                         </div>
                         <div>
-                            <a href="">
+                            <a href="javascript:void(reload())">
                                 <img src="./assets/ico/reload.svg">
                             </a>
                         </div>

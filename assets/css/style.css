@@ -107,7 +107,7 @@ body {
 .container {
     display: block;
     width: 960px;
-    max-width: calc(100vw - 20px );
+    max-width: 80vw;
     margin: 0 auto;
 }
 .title {
@@ -125,6 +125,11 @@ body {
 }
 .grid-3 {
     grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 800px) {
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 .g-1 {
     gap: 1rem;
@@ -168,3 +173,22 @@ body {
 }
 .font-37 { font-size: 37px ;}
 .font-18 { font-size: 18px ;}
+
+@media (max-width: 800px) {
+    .font-37 { font-size: 18px ;}
+    .font-18 { font-size: 15px ;}
+}
+.error {
+    display: block;
+    color: #2c3e50;
+    line-height: 30px;
+    border-radius: 5px;
+    background-color: #f1c40f;
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 70%;
+    text-align: center;
+}
+[hidden] {
+    display: none !important;
+}
