@@ -6,7 +6,7 @@ globalThis.logar = async () => {
 }
 
 export default {
-    render(el) {
+    async render(el) {
         return `
             <div id="login">
                 <div class="login">

@@ -5,7 +5,7 @@ globalThis.back = () => {
     window.history.back()
 }
 export default {
-    render( el ) {
+    async render( el ) {
         return `
             <div class="full azul">
                 <div class="container">

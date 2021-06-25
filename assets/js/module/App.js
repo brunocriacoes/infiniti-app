@@ -39,8 +39,10 @@ export default class {
             let component = this.component[element_name]
             window.customElements.define(`c-${element_name}`, class extends HTMLElement {
                 constructor() {
-                    super();
-                    this.innerHTML = component.render( this )
+                    super()
+                    ;(async () => {
+                        this.innerHTML = await component.render( this )
+                    })()
                 }
             })
         })

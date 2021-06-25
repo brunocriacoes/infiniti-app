@@ -1,5 +1,5 @@
 export default {
-    render( el ) {
+    async render( el ) {
         let ico = el.getAttribute('ico')
         let title = el.getAttribute('title')
         let subtitle = el.getAttribute('subtitle')

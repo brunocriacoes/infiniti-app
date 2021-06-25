@@ -160,6 +160,7 @@ body {
 .card-resumo b {
     display: block;
     text-align: center;
+    min-height: 50px;
 }
 .card-resumo-line {
     display: block;
