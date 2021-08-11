@@ -1,6 +1,6 @@
 import cache from './Cache.js'
 
-const path_host = 'https://adm.infinitilav.com.br'
+const path_host = 'http://191.243.198.108/adm'
 
 
 async function login() {

@@ -9,6 +9,7 @@ function router( $path, $action_hook ) {
     $corruente_uri = $_SERVER['REQUEST_URI'];
     $corruente_path = parse_url($corruente_uri, PHP_URL_PATH);
     $corruente_quary = parse_url($corruente_uri, PHP_URL_QUERY);
+    $corruente_path = str_replace(['infiniti-adm/','adm/'], '', $corruente_path);
     if( $corruente_path == $path ) {
         $explode_method_instace = explode( '@', $action_hook );
         call_user_func( $explode_method_instace, urldecode( $corruente_quary ) );
